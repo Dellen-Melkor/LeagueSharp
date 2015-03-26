@@ -1,0 +1,12 @@
+C:\Users\metin elektronik\Desktop\Haydari LP Yardimcisi\Haydari LP Yardimcisi\bin\Release\Haydari LP Yardimcisi.exe.config
+C:\Users\metin elektronik\Desktop\Haydari LP Yardimcisi\Haydari LP Yardimcisi\bin\Release\Haydari LP Yardimcisi.exe
+C:\Users\metin elektronik\Desktop\Haydari LP Yardimcisi\Haydari LP Yardimcisi\bin\Release\Haydari LP Yardimcisi.pdb
+C:\Users\metin elektronik\Desktop\Haydari LP Yardimcisi\Haydari LP Yardimcisi\bin\Release\LeagueSharp.Common.dll
+C:\Users\metin elektronik\Desktop\Haydari LP Yardimcisi\Haydari LP Yardimcisi\bin\Release\LeagueSharp.dll
+C:\Users\metin elektronik\Desktop\Haydari LP Yardimcisi\Haydari LP Yardimcisi\bin\Release\SharpDX.Direct3D9.dll
+C:\Users\metin elektronik\Desktop\Haydari LP Yardimcisi\Haydari LP Yardimcisi\bin\Release\SharpDX.dll
+C:\Users\metin elektronik\Desktop\Haydari LP Yardimcisi\Haydari LP Yardimcisi\bin\Release\clipper_library.dll
+C:\Users\metin elektronik\Desktop\Haydari LP Yardimcisi\Haydari LP Yardimcisi\bin\Release\LeagueSharp.xml
+C:\Users\metin elektronik\Desktop\Haydari LP Yardimcisi\Haydari LP Yardimcisi\obj\Debug\Haydari LP Yardimcisi.csprojResolveAssemblyReference.cache
+C:\Users\metin elektronik\Desktop\Haydari LP Yardimcisi\Haydari LP Yardimcisi\obj\Debug\Haydari LP Yardimcisi.exe
+C:\Users\metin elektronik\Desktop\Haydari LP Yardimcisi\Haydari LP Yardimcisi\obj\Debug\Haydari LP Yardimcisi.pdb
