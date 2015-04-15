@@ -28,6 +28,7 @@ namespace HaydariGeceler_cici_wipi_TR
             var press1 =haydarigeceler.AddItem(new MenuItem("GGyaz", "GG yazdir").SetValue(new KeyBind(37, KeyBindType.Press)));
             var press2=haydarigeceler.AddItem(new MenuItem("WPyaz", "WP yazdir").SetValue(new KeyBind(39, KeyBindType.Press)));
             var press3 = haydarigeceler.AddItem(new MenuItem("XDyaz", "XD yazdir").SetValue(new KeyBind(40, KeyBindType.Press)));
+            var press4 = haydarigeceler.AddItem(new MenuItem("PNSciz ", "Penis cizdir").SetValue(new KeyBind(96, KeyBindType.Press)));
             haydarigeceler.AddItem(new MenuItem("Bilgiler", "HaydariGeceler Tarafindan yazilmistir, desteklerinizi bekleriz"));
             haydarigeceler.AddToMainMenu();
 
@@ -96,6 +97,30 @@ namespace HaydariGeceler_cici_wipi_TR
                         Game.Say("/all     ## ##    ##         ##");
                         Game.Say("/all    ##   ##   ##         ##");
                         Game.Say("/all  ##     ##  #######");
+
+                        duramk = true;
+                        gameTime1 = Game.Time + 1;
+
+                    }
+                if (Game.Time > gameTime1)
+                {
+                    duramk = false;
+                }
+            };
+            press4.ValueChanged += delegate(object sender, OnValueChangeEventArgs EventArgs)
+            {
+                if (haydarigeceler.Item("PNSciz").GetValue<KeyBind>().Active)
+                    if (duramk == false)
+                    {
+
+                        Game.Say("/all          ____");
+                        Game.Say("/all        / /     7");
+                        Game.Say("/all       (__,__/\\ ");
+                        Game.Say("/all        \\         \\ ");
+                        Game.Say("/all         \\         \\ ");
+                        Game.Say("/all       __\\         \\__");
+                        Game.Say("/all      (     \\            )");
+                        Game.Say("/all       \\___\\_____/  ");
 
                         duramk = true;
                         gameTime1 = Game.Time + 1;
