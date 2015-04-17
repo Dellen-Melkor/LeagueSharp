@@ -28,7 +28,7 @@ namespace HaydariGeceler_cici_wipi_TR
             var press1 =haydarigeceler.AddItem(new MenuItem("GGyaz", "GG yazdir").SetValue(new KeyBind(37, KeyBindType.Press)));
             var press2=haydarigeceler.AddItem(new MenuItem("WPyaz", "WP yazdir").SetValue(new KeyBind(39, KeyBindType.Press)));
             var press3 = haydarigeceler.AddItem(new MenuItem("XDyaz", "XD yazdir").SetValue(new KeyBind(40, KeyBindType.Press)));
-            var press4 = haydarigeceler.AddItem(new MenuItem("PNSciz ", "Penis cizdir").SetValue(new KeyBind(96, KeyBindType.Press)));
+            var press4 = haydarigeceler.AddItem(new MenuItem("PNSciz", "Penis cizdir").SetValue(new KeyBind(96, KeyBindType.Press)));
             haydarigeceler.AddItem(new MenuItem("Bilgiler", "HaydariGeceler Tarafindan yazilmistir, desteklerinizi bekleriz"));
             haydarigeceler.AddToMainMenu();
 
