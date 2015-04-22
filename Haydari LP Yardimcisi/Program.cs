@@ -13,7 +13,7 @@ namespace Haydari_LP_Yardimcisi
     class Program
     {
         private static string wb;
-        private static int Intentos = 0;
+        private static int huloooo = 0;
         private static List<string> camp = new List<string>();
         private static string kirmizi = "<font color = \"#ff052b\">";
         private static string close = "</font>";
@@ -28,9 +28,9 @@ namespace Haydari_LP_Yardimcisi
         private static List<string> savunma = new List<string>();
         private static List<string> islevsel = new List<string>();
         private static List<System.Drawing.Color> colores = new List<Color>();
-        private static LeagueSharp.Common.Menu gui;
+        private static LeagueSharp.Common.Menu haydarigeceler;
         private static Obj_AI_Hero Player { get { return ObjectManager.Player; } }
-        private static int cantidad = 0;
+        private static int miktari = 0;
         static void Main(string[] args)
         {
 
@@ -42,10 +42,6 @@ namespace Haydari_LP_Yardimcisi
             colores.Add(System.Drawing.Color.DodgerBlue);
         }
 
-        /// <summary>
-        /// / DÜNYA GÜZEL YAŞAMAYI BİLİN GENÇLER..
-        /// </summary>
-        
 
         private static void Game_OnGameLoad(EventArgs args)
         {
@@ -56,7 +52,7 @@ namespace Haydari_LP_Yardimcisi
                 Game.PrintChat("Haydari LP Yardimcisi KOREA serveri desteklemiyor");
                 return;
             }
-            gui = new LeagueSharp.Common.Menu("Haydari LP Yardimcisi", "", true);
+            haydarigeceler = new LeagueSharp.Common.Menu("Haydari LP Yardimcisi", "", true);
             if (Navegar() == false)
             {
                 return;
@@ -64,9 +60,9 @@ namespace Haydari_LP_Yardimcisi
 
 
 
-            var press = gui.AddItem(new MenuItem("secenekler", "bilgileri sohbete yaz").SetValue(new KeyBind(76, KeyBindType.Press)));
-            gui.AddItem(new MenuItem("Bilgiler", "HaydariGeceler tarafindan yazildim desteklerinizi bekleriz:) "));
-            gui.AddToMainMenu();
+            var press = haydarigeceler.AddItem(new MenuItem("secenekler", "bilgileri sohbete yaz").SetValue(new KeyBind(76, KeyBindType.Press)));
+            haydarigeceler.AddItem(new MenuItem("Bilgiler", "HaydariGeceler tarafindan yazildim desteklerinizi bekleriz:) "));
+            haydarigeceler.AddToMainMenu();
 
 
 
@@ -76,12 +72,12 @@ namespace Haydari_LP_Yardimcisi
 
 
 
-                if (gui.Item("secenekler").GetValue<KeyBind>().Active)
+                if (haydarigeceler.Item("secenekler").GetValue<KeyBind>().Active)
                 {
 
 
 
-                    imprimir_todo();
+                    yazdirmaca();
 
 
                 }
@@ -99,14 +95,14 @@ namespace Haydari_LP_Yardimcisi
             if (wb.Contains("player-name"))
             {
 
-                Obtener_datos();
+                verial();
                 return true;
             }
             else
             {
 
-                Intentos += 1;
-                if (Intentos == 5)
+                huloooo += 1;
+                if (huloooo == 5)
                 {
                     Game.PrintChat("HAYDARI LP YARDIMCI SUNUCUSU <font color = \"#ff052b\">CALISMIYOR.</font> BIRKAC DAKIKA ICINDE TEKRAR DENEYIN [F5] ");
                     return false;
@@ -117,7 +113,7 @@ namespace Haydari_LP_Yardimcisi
         }
 
 
-        static void Obtener_datos()
+        static void verial()
         {
 
 
@@ -171,14 +167,14 @@ namespace Haydari_LP_Yardimcisi
 
 
 
-            cantidad = camp.Count;
+            miktari = camp.Count;
 
 
 
 
         }
 
-        static void imprimir_todo()
+        static void yazdirmaca()
         {
 
 
@@ -191,7 +187,7 @@ namespace Haydari_LP_Yardimcisi
                     Game.PrintChat(sarimsi + "-BEN" + close + "--->" + close + lila + lig[i].ToUpper() + " (" + puan[i] + ")" + close + "-->" + sari + saldiri[i] + savunma[i] + islevsel[i] + close);
                     continue;
                 }
-                if (cantidad == 10)
+                if (miktari == 10)
                 {
 
 
@@ -204,7 +200,7 @@ namespace Haydari_LP_Yardimcisi
                 }
 
 
-                if (cantidad == 6)
+                if (miktari == 6)
                 {
                     if (i >= 3)
                     {
