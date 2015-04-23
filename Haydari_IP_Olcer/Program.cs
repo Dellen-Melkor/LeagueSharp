@@ -38,10 +38,9 @@ namespace Haydari_IP_Olcer
         {
             double dakika = Game.Time / 60 - 1;
             double kazanip = 18 + 2.312 * dakika;
-            double kayipip = 16 + 1.405 * dakika;
-            double berabere = 1881 + 1881 * 1453;
-            Game.PrintChat("<font color = \"#39f613\">Kazaninca: </font>" + kazanip);
-            Game.PrintChat("<font color = \"#39f613\">Kaybedince: </font>" + kayipip);
+            double kayipip = 16 + 1.405 * dakika;            
+            Game.PrintChat("<font color = \"#39f613\">Kazaninca: </font>" + kazanip + "IP gelicek.");
+            Game.PrintChat("<font color = \"#39f613\">Kaybedince: </font>" + kayipip + "IP gelicek.");
             Game.PrintChat("<font color = \"#39f613\">Dakika: </font>" + dakika);
         }                   
         public static void OnUpdate(EventArgs args)
