@@ -9,7 +9,7 @@ namespace Haydari_IP_Olcer
     {
         public static bool durus = false;
         public static float oynzmn = 0;
-        public static Menu Config;        
+        public static Menu haydarimenu;        
         static void Main(string[] args)
         {
             CustomEvents.Game.OnGameLoad += Game_OnGameLoad;
@@ -18,17 +18,17 @@ namespace Haydari_IP_Olcer
         public static void Game_OnGameLoad(EventArgs args)
         {
             Game.PrintChat("<font color = \"#ff052b\">Haydari IP Olcer :</font> Yuklendi");
-            Config = new Menu("IP Olcer", "IP Olcer", true);
-            Config.AddItem(new MenuItem("IPgali", "Kazanınca "));
-            Config.AddItem(new MenuItem("IPmaglu", "Kaybedince"));
-            Config.AddItem(new MenuItem("IPberaber", "Berabere kalinca"));
-            Config.AddItem(new MenuItem("dakika",""));
-            Config.AddItem(new MenuItem("Yapimci", "HaydariGeceler Tarafindan " + "Yazildim desteklerinizi beklerim"));
-            var press1 = Config.AddItem(new MenuItem("tiklagelsin", "Chate yazdir").SetValue(new KeyBind(85, KeyBindType.Press)));
-            Config.AddToMainMenu();
+            haydarimenu = new Menu("IP Olcer", "IP Olcer", true);
+            haydarimenu.AddItem(new MenuItem("IPgali", "Kazanınca "));
+            haydarimenu.AddItem(new MenuItem("IPmaglu", "Kaybedince"));
+            haydarimenu.AddItem(new MenuItem("IPberaber", "Berabere kalinca"));
+            haydarimenu.AddItem(new MenuItem("dakika",""));
+            haydarimenu.AddItem(new MenuItem("Yapimci", "HaydariGeceler Tarafindan " + "Yazildim desteklerinizi beklerim"));
+            var press1 = haydarimenu.AddItem(new MenuItem("tiklagelsin", "Chate yazdir").SetValue(new KeyBind(85, KeyBindType.Press)));
+            haydarimenu.AddToMainMenu();
             press1.ValueChanged += delegate(object sender, OnValueChangeEventArgs EventArgs)
             {
-                if (Config.Item("tiklagelsin").GetValue<KeyBind>().Active)
+                if (haydarimenu.Item("tiklagelsin").GetValue<KeyBind>().Active)
                 {
                     yazdirmaca();
                 }
@@ -49,10 +49,10 @@ namespace Haydari_IP_Olcer
             double kazanip = 18 + 2.312 * dakika;
             double kayipip = 16 + 1.405 * dakika;
             double berabere = 1881 + 1881 * 1453;
-            Config.Item("IPgali").DisplayName = "Kazandiginda " + kazanip + "  ip gelicek";
-            Config.Item("IPmaglu").DisplayName = "Kaybettiginde " + kayipip + "  İp gelcek";
-            Config.Item("IPberaber").DisplayName = " Berabere kalınca :" + berabere + " saka saka xD";
-            Config.Item("dakika").DisplayName = "dakika :" + dakika;
+            haydarimenu.Item("IPgali").DisplayName = "Kazandiginda " + kazanip + "  ip gelicek";
+            haydarimenu.Item("IPmaglu").DisplayName = "Kaybettiginde " + kayipip + "  İp gelcek";
+            haydarimenu.Item("IPberaber").DisplayName = " Berabere kalınca :" + berabere + " saka saka xD";
+            haydarimenu.Item("dakika").DisplayName = "dakika :" + dakika;
         }
     }
 }
