@@ -161,14 +161,14 @@ namespace HaydariGeceler_cici_wipi_TR
                     if (duramk == false)
                     {
 
-                        Game.Say("/all           _,------.__");
-                        Game.Say("/all          /        '  )");
-                        Game.Say("/all         (__      ,-<@\\");
-                        Game.Say("/all         ((\\          `-.");
-                        Game.Say("/all          \\Y   (     , '^<");
-                        Game.Say("/all          `-'   `   /   __\\");
-                        Game.Say("/all              \\     ,--'  (");
-                        Game.Say("/all               `----------'");
+                        Game.Say("/all            _,------.__");
+                        Game.Say("/all           /        '  )");
+                        Game.Say("/all          (__      ,-<@\\");
+                        Game.Say("/all          ((\\          `-.");
+                        Game.Say("/all           \\Y   (     , '^<");
+                        Game.Say("/all           `-'   `   /   __\\");
+                        Game.Say("/all               \\     ,--'  (");
+                        Game.Say("/all                `----------'");
 
                         duramk = true;
                         gameTime1 = Game.Time + 1;
