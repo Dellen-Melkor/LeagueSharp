@@ -155,7 +155,7 @@ namespace HaydariGeceler_cici_wipi_TR
                     duramk = false;
                 }
             };
-            press5.ValueChanged += delegate(object sender, OnValueChangeEventArgs EventArgs)
+            press6.ValueChanged += delegate(object sender, OnValueChangeEventArgs EventArgs)
             {
                 if (haydarigeceler.Item("Smiley").GetValue<KeyBind>().Active)
                     if (duramk == false)
