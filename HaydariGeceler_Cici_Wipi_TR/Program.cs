@@ -161,13 +161,13 @@ namespace HaydariGeceler_cici_wipi_TR
                     if (duramk == false)
                     {
 
-                        Game.Say("/all          .,--,.  ");
-                        Game.Say("/all  ...   ,'  __  ',    _");
-                        Game.Say("/all  |||  j  /'  `\\  t  f |");
-                        Game.Say("/all  t j  f |      | j  t_|");
-                        Game.Say("/all   T   j  \\    /  t   Y|");
-                        Game.Say("/all   |    ', `--' ,'    ||");
-                        Game.Say("/all   U      '~--~'      LJ");
+                        Game.Say("/all           .,--,.   ");
+                        Game.Say("/all   ...   ,'  __  ',     _");
+                        Game.Say("/all   |||  j  /'  `\\  t   f |");
+                        Game.Say("/all   t j  f |      | j   t_|");
+                        Game.Say("/all    T   j  \\    /  t    Y|");
+                        Game.Say("/all    |    ', `--' ,'     ||");
+                        Game.Say("/all    U      '~--~'       LJ");
 
                         duramk = true;
                         gameTime1 = Game.Time + 1;
