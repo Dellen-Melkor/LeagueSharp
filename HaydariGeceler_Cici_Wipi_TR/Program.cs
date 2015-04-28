@@ -30,6 +30,7 @@ namespace HaydariGeceler_cici_wipi_TR
             var press3 = haydarigeceler.AddItem(new MenuItem("XDyaz", "XD yazdir").SetValue(new KeyBind(40, KeyBindType.Press)));
             var press4 = haydarigeceler.AddItem(new MenuItem("PNSciz", "Penis cizdir").SetValue(new KeyBind(96, KeyBindType.Press)));
             var press5 = haydarigeceler.AddItem(new MenuItem("Smiley", "Smiley at").SetValue(new KeyBind(97, KeyBindType.Press)));
+            var press6 = haydarigeceler.AddItem(new MenuItem("Maymun", "Maymun surat").SetValue(new KeyBind(98, KeyBindType.Press)));
             haydarigeceler.AddItem(new MenuItem("Bilgiler", "HaydariGeceler Tarafindan yazilmistir, desteklerinizi bekleriz"));
             haydarigeceler.AddToMainMenu();
 
@@ -154,7 +155,30 @@ namespace HaydariGeceler_cici_wipi_TR
                     duramk = false;
                 }
             };
-            
+            press5.ValueChanged += delegate(object sender, OnValueChangeEventArgs EventArgs)
+            {
+                if (haydarigeceler.Item("Smiley").GetValue<KeyBind>().Active)
+                    if (duramk == false)
+                    {
+
+                        Game.Say("/all           _,------.__");
+                        Game.Say("/all          /        '  )");
+                        Game.Say("/all         (__      ,-<@\\");
+                        Game.Say("/all         ((\\          `-.");
+                        Game.Say("/all          \\Y   (     , '^<");
+                        Game.Say("/all          `-'   `   /   __\\");
+                        Game.Say("/all              \\     ,--'  (");
+                        Game.Say("/all               `----------'");
+
+                        duramk = true;
+                        gameTime1 = Game.Time + 1;
+
+                    }
+                if (Game.Time > gameTime1)
+                {
+                    duramk = false;
+                }
+            };
         }
     }
 }
