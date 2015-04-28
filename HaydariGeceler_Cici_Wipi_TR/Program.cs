@@ -157,18 +157,18 @@ namespace HaydariGeceler_cici_wipi_TR
             };
             press6.ValueChanged += delegate(object sender, OnValueChangeEventArgs EventArgs)
             {
-                if (haydarigeceler.Item("Smiley").GetValue<KeyBind>().Active)
+                if (haydarigeceler.Item("Maymun").GetValue<KeyBind>().Active)
                     if (duramk == false)
                     {
 
-                        Game.Say("/all            _,------.__");
-                        Game.Say("/all           /        '  )");
-                        Game.Say("/all          (__      ,-<@\\");
-                        Game.Say("/all          ((\\          `-.");
-                        Game.Say("/all           \\Y   (     , '^<");
-                        Game.Say("/all           `-'   `   /   __\\");
-                        Game.Say("/all               \\     ,--'  (");
-                        Game.Say("/all                `----------'");
+                        Game.Say("/all            _,------.__ ");
+                        Game.Say("/all           /        '  ) ");
+                        Game.Say("/all          (__      ,-<@\\ ");
+                        Game.Say("/all          ((\\          `-. ");
+                        Game.Say("/all           \\Y   (     , '^< ");
+                        Game.Say("/all           `-'   `   /   __\\ ");
+                        Game.Say("/all               \\     ,--'  ( ");
+                        Game.Say("/all                `----------' ");
 
                         duramk = true;
                         gameTime1 = Game.Time + 1;
