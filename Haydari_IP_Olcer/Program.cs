@@ -21,7 +21,7 @@ namespace Haydari_IP_Olcer
             haydarimenu = new Menu("IP Olcer", "IP Olcer", true);
             haydarimenu.AddItem(new MenuItem("IPgali", "Kazanınca "));
             haydarimenu.AddItem(new MenuItem("IPmaglu", "Kaybedince"));
-            haydarimenu.AddItem(new MenuItem("IPberaber", "Berabere kalinca"));
+            haydarimenu.AddItem(new MenuItem("IPberaber", "Berabere"));
             haydarimenu.AddItem(new MenuItem("dakika",""));
             haydarimenu.AddItem(new MenuItem("Yapimci", "HaydariGeceler Tarafindan " + "Yazildim desteklerinizi beklerim"));
             var press1 = haydarimenu.AddItem(new MenuItem("tiklagelsin", "Chate yazdir").SetValue(new KeyBind(85, KeyBindType.Press)));
@@ -37,17 +37,19 @@ namespace Haydari_IP_Olcer
             static void yazdirmaca()
         {
             double dakika = Game.Time / 60 - 1;
-            double kazanip = 18 + 2.312 * dakika;
-            double kayipip = 16 + 1.405 * dakika;            
-            Game.PrintChat("<font color = \"#39f613\">Kazaninca: </font>" + kazanip + "IP gelicek.");
-            Game.PrintChat("<font color = \"#39f613\">Kaybedince: </font>" + kayipip + "IP gelicek.");
+            double kazanip = 18.193 + 2.312 * dakika;
+            double kayipip = 15.403 + 1.405 * dakika;            
+            Game.PrintChat("<font color = \"#39f613\">Kazaninca: </font>" + kazanip + " IP gelicek.");
+            Game.PrintChat("<font color = \"#39f613\">Kaybedince: </font>" + kayipip + " IP gelicek.");
+            Game.PrintChat("<font color = \"#39f613\">Berabere: </font>" + berabere + " saka saka xD");
             Game.PrintChat("<font color = \"#39f613\">Dakika: </font>" + dakika);
+            
         }                   
         public static void OnUpdate(EventArgs args)
         {
             double dakika = Game.Time / 60 - 1 ;
-            double kazanip = 18 + 2.312 * dakika;
-            double kayipip = 16 + 1.405 * dakika;
+            double kazanip = 18.193 + 2.312 * dakika;
+            double kayipip = 15.403 + 1.405 * dakika;
             double berabere = 1881 + 1881 * 1453;
             haydarimenu.Item("IPgali").DisplayName = "Kazandiginda " + kazanip + "  ip gelicek";
             haydarimenu.Item("IPmaglu").DisplayName = "Kaybettiginde " + kayipip + "  İp gelcek";
